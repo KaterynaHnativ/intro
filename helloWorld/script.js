@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function(){
     console.log(revisionStage);
     revisionStage = 'banned';
     console.log(revisionStage);
-
-    //econsole.log(globalVar);
     
     // Uncaught SyntaxError: Identifier 'revisionStage' has already been declared
     // var revisionStage = 1;
