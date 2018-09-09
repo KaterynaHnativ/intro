@@ -1,9 +1,16 @@
 document.addEventListener('DOMContentLoaded', function(){
     //read: https://metanit.com/web/javascript/2.1.php and   https://metanit.com/web/javascript/2.2.php and https://metanit.com/web/javascript/2.3.php
-    let revisionStage = 'pending';
+    let revisionStage;
+    console.warn(revisionStage);
+    revisionStage = 'pending';
     console.log(revisionStage);
     revisionStage = 'banned';
     console.log(revisionStage);
+
+    console.log(globalVar);
+
+    console.log(document);
+    document.getElementById('p1').innerHTML = 'This is paragraf 1';
     
     // Uncaught SyntaxError: Identifier 'revisionStage' has already been declared
     // var revisionStage = 1;
@@ -15,14 +22,21 @@ document.addEventListener('DOMContentLoaded', function(){
     // PI = 10; 
 
      let foo = function () {
-        x = 1;
+        let x = 1;
         console.log(x);
+        console.log('foo ', revisionStage);
         let innerFoo = function() {
             let x = 2;
             console.log(x);
+            console.log('innerFoo ', revisionStage);
         }();
         console.log(x);
     }();
+
+    // Uncaught ReferenceError: x is not defined
+    // let foo2 = function () {
+    //     console.log('!!!', x);
+    // }();
 
     // Uncaught ReferenceError: notValidVar is not defined
     // console.log(notValidVar);
@@ -30,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     let string = 'String';
     string = 'Another String';
+    console.log(string);
     let id ='2891212304';
     console.log('We can\'t do math operaton with id');
 
@@ -53,7 +68,8 @@ document.addEventListener('DOMContentLoaded', function(){
     let user = {
         login: 'Tom',
         email: 'tom@gmail.com',
-        password: 'qwert123'
+        password: 'qwert123',
+        age: 18
     };
     console.log(user);
     console.log(user.email);
@@ -63,11 +79,12 @@ document.addEventListener('DOMContentLoaded', function(){
     var yNumber = xNumber + 5;
     console.log(yNumber); // 50
         
-    xNumber = "45"; // тип string
+    xNumber = '45'; // тип string
+    console.log('typeof xNumber: ', typeof xNumber);
     if (typeof xNumber === 'number'){
         var zNumber = xNumber + 5;
         console.log(zNumber);
     } else {
-        console.log('xNumber has not type of number');
+        console.log('xNumber is not type of number');
     }
 });
