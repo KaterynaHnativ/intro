@@ -6,3 +6,6 @@ chapter 2 and 3
 for Katya Taier-Ylyanova:
 https://metanit.com/web/javascript/2.1.php
 https://metanit.com/web/javascript/2.2.php
+
+
+10/9/2018 = https://metanit.com/web/javascript/2.3.php  -- read this peruse!!
