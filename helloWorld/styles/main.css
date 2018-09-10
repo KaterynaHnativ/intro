@@ -1,6 +1,7 @@
 h1 {
     color: pink;
     text-align: center;
+    border-style: dashed;
 }
 
 button {
