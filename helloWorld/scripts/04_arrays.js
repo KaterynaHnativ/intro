@@ -113,4 +113,47 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
     ];
+
+   let drivers = [
+    {
+        name: 'Sam',
+        phone: '151515',
+        adress: {
+            city: 'Rivne',
+            street: 'Soborna'
+        }
+    },
+    {
+        name: 'John',
+        phone: '565656',
+        adress: {
+            city: 'Kyiv',
+            street: 'Solomon'
+        }
+    },
+    {
+        name: 'Sasha',
+        phone: '464646',
+        adress: {
+            city: 'Ternopil',
+            street: 'Sheva'
+        }
+    },
+    {
+        name: 'Lida',
+        phone: '474747',
+        adress: {
+            city: 'Rivne',
+            street: 'Olga'
+        }
+    },
+    {
+        name: 'David',
+        phone: '787878',
+        adress: {
+            city: 'Kyiv',
+            street: 'Fuck'
+        }
+    }
+   ]
 });
