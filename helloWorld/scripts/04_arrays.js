@@ -65,4 +65,52 @@ document.addEventListener('DOMContentLoaded', function(){
     console.log(animal, katya, phoneBook);
     phoneBook[0].phone = '121212';
     console.log(animal, katya, phoneBook);
+
+    let cars = [
+        {
+            color: 'red',
+            model: 'renault',
+            speed: '120',
+            adressDepo: {
+                city: 'Kyiv',
+                street: 'Shevchenka'
+            }
+        },
+        {
+            color: 'blue',
+            model: 'toyota',
+            speed: '160',
+            adressDepo: {
+                city: 'Rivne',
+                street: 'Myru'
+            }
+        },
+        {
+            color: 'yellow',
+            model: 'deo',
+            speed: '110',
+            adressDepo: {
+                city: 'Ternopil',
+                street: 'Bila'
+            }
+        },
+        {
+            color: 'black',
+            model: 'audi',
+            speed: '180',
+            adressDepo: {
+                city: 'Rivne',
+                street: 'Vidinska'
+            }
+        },
+        {
+            color: 'white',
+            model: 'audi',
+            speed: '160',
+            adressDepo: {
+                city: 'Kyiv',
+                street: 'Mayak'
+            }
+        }
+    ];
 });
