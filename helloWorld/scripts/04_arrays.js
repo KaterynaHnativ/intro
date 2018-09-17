@@ -66,19 +66,20 @@ document.addEventListener('DOMContentLoaded', function(){
     phoneBook[0].phone = '121212';
     console.log(animal, katya, phoneBook);
 
-    let isWriter = false;
-    let writerPercent = null;
+    let writer = {
+        isExist: false,
+        percent: null
+    }
+    let customer = {
+        isExist: false,
+        percent: null
+    }
 
-    let isCustomer = false;
-    let customerPercent = null;
-
-    initOwner(isWriter, writerPercent);
-    console.log('isWriter == ', isWriter);
-    console.log('writerPercent == ', writerPercent);
+    initOwner(writer);
+    console.log('writer == ', writer);
     console.log('!!!!!!!!!!!!!!!!!');
-    initOwner(isCustomer, customerPercent);
-    console.log('isCustomer == ', isWriter);
-    console.log('customerPercent == ', isWriter);
+    initOwner(customer);
+    console.log('customer == ', customer);
 
     let cars = [
         {
