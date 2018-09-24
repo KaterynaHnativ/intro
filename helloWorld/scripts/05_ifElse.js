@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', function(){
     };
 
     if (user.id === null) {
-        console.log('user doesnt exist');
+        console.log('user doesn\'t exist');
     }
+
+    user = null;
+    let userMsg = (user) ? 'user exists' : 'user does not exist';
+    console.log(userMsg);  
 });
